@@ -41,9 +41,9 @@ public class Utilizador {
 	@OneToMany
 	private List<Musica> musicas;
 
-	// Duarte Start - Letras
-	@OneToMany(mappedBy = "dono")
-	private List<Letra> userLetras;
+	// usar este para role! nao... ManyToMany!!
+	// @OneToMany(mappedBy = "dono")
+	// private List<Letra> userLetras;
 	// Duarte End
 
 	@XmlTransient 
